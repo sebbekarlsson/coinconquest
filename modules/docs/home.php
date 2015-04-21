@@ -6,6 +6,6 @@
 		No time to waste!
 	</p>
 	<p>
-		<button class="btn">Join now</button>
+		<a href="index.php?doc=register.php"><button class="btn">Join now</button></a>
 	</p>
 </div>
