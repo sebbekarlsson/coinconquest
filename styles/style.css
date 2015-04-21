@@ -38,7 +38,8 @@ nav {
   nav .right {
     float: right; }
   nav #brand {
-    color: yellow; }
+    color: yellow;
+    text-decoration: none; }
 
 .hero {
   width: 100%;
