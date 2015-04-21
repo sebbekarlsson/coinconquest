@@ -1,3 +1,10 @@
+<?php
+	include("modules/API.php");
+
+	$doc = $_GET['doc'];
+	if(!isset($_GET['doc'])){$doc = "home.php";}
+
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -6,24 +13,21 @@
 	</head>
 
 	<body>
-		<nav>
-			<ul class="left">
-				<li>CoinConquest</li>
-			</ul>
-		</nav>
-		<h1>Title</h1>
-		<p>Paragraph lorem ipsa pisumatic lora lerez karom durum dar sari farahrm</p>
-		<h2>Title</h2>
-		<h3>Title</h3>
-		<h4>Title</h4>
-		<p>Paragraph lorem ipsa pisumatic lora lerez karom durum dar sari farahrm<br>
-		Paragraph lorem ipsa pisumatic lora lerez karom durum dar sari farahrm<br>
-		Paragraph lorem ipsa pisumatic lora lerez karom durum dar sari farahrm<br>
-		Paragraph lorem ipsa pisumatic lora lerez karom durum dar sari farahrm<br>
-		Paragraph lorem ipsa pisumatic lora lerez karom durum dar sari farahrm<br>
-		Paragraph lorem ipsa pisumatic lora lerez karom durum dar sari farahrm<br>
-		Paragraph lorem ipsa pisumatic lora lerez karom durum dar sari farahrm<br>
-		</p>
+		<?php include("modules/nav.php"); ?>
+		<div class="content">
+			<div class="hero" style="background-image:url(images/house.jpg);">
+				<span>
+					<h1>CoinConquest</h1>
+					<p>Join now and get 500$</p>
+				</span>	
+			</div>
+			<nav><marquee>Join now, recieve 500$</marquee></nav>
+			<?php
+
+				include("modules/docs/$doc");
+
+			?>
+		</div>
 	</body>
 
 	<footer>
