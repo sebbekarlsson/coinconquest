@@ -93,6 +93,22 @@ nav {
   margin-left: auto;
   margin-right: auto; }
 
+.account-content {
+  display: flex;
+  min-height: 100vh; }
+
+.account-piece {
+  width: 100%;
+  margin: 4px; }
+
+#account-side {
+  width: 35%;
+  background-color: lightgray; }
+  #account-side ul, #account-side li {
+    list-style: none;
+    width: 100%;
+    color: gray; }
+
 @media screen and (max-width: 700px) {
   .content {
     width: 100%; } }

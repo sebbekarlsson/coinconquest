@@ -21,7 +21,7 @@
 					<p>Join now and get 500$</p>
 				</span>	
 			</div>
-			<nav><marquee>Join now, recieve 500$</marquee></nav>
+			<?php include("modules/banner.php"); ?>
 			<?php
 
 				include("modules/docs/$doc");

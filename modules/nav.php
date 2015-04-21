@@ -7,6 +7,7 @@
 		<li><a class="navbtn" href="index.php?doc=login.php">Login</a></li>
 		<li><a class="navbtn" href="index.php?doc=register.php">Register</a></li>
 		<?php }else{?>
+		<li><a class="navbtn" href="index.php?doc=play.php">Play</a></li>
 		<li><a class="navbtn" href="index.php?doc=logout.php">Logout</a></li>
 		<?php }?>
 	</ul>

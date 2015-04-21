@@ -4,6 +4,11 @@
 
 	$db = new PDO("mysql:host=*.dev;dbname=coinconquest;", "root", "tango255");
 
+	if(is_loggedin()){
+		$USER = new User($_SESSION['userID']);
+		$USER->fetch_build();
+	}
+
 
 	function logout(){
 		unset($_SESSION['userID']);
